@@ -14,7 +14,7 @@
       <img src="images/spock.png" data-pick='spock'>
     </div>
     <ul id="results">
-      <li> <li>Tony crushessag</li> </li>
+      
     </ul>
 
     <script src='lib/Player.js'></script>
@@ -25,12 +25,14 @@
         var alex = new Player('Alex');
         var tony = new Player('Tony');
         var game = new Game(alex, tony)
+        
 
         $('.choices img').on('click', function(){
           alex.picks($(this).data('pick'));
           tony.picks('rock');
 
-          $('#results li').prepend('<li>' + game.winningMessage() + '</li>');
+          $('#results').prepend('<li>' + game.winningMessage() + '</li>');
+          $('#results li:gt(5)').remove()
         })
       })
     </script>
