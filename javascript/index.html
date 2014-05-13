@@ -29,10 +29,10 @@
 
         $('.choices img').on('click', function(){
           alex.picks($(this).data('pick'));
-          tony.picks(_GenerateRandomPickFrom(possible_picks));
+          tony.picks(_generateRandomPickFrom(possiblePicks));
 
           $('#results').prepend('<li>' + game.winningMessage() + '</li>');
-          $('#results li:gt(5)').remove()
+          $('#results li:gt(5)').remove();
         })
       })
     </script>

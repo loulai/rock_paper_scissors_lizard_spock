@@ -50,6 +50,6 @@ Game.prototype._isSamePick = function() {
   return this.player1.pick === this.player2.pick;
 }
 
-Game.prototype._GenerateRandomPickFrom = function(array) {
-  return Math.floor(Math.random() * array.length)
+Game.prototype._generateRandomPickFrom = function(array) {
+  return array[Math.floor(Math.random() * array.length)]
 }
