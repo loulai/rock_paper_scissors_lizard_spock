@@ -9,7 +9,6 @@ I pair programmed with [Nico Saueressig] to create a simple JavaScript applicati
 The primary learning objective of this project is to become more familiar with the Javascript and jQuery.
 
 **Tech**
-
 * Javascript
 * jQuery
 * HTML 5
