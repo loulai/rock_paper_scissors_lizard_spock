@@ -6,6 +6,8 @@ an epic, more complex version of Rock-Paper-Scissors
 
 I pair programmed with [Nico Saueressig] to create a simple JavaScript application where a person can play rock-paper-scissors-lizard-spock with the computer.
 
+The primary learning objective of this project is to become more familiar with the Javascript and jQuery.
+
 **Tech**
 
 * Javascript
