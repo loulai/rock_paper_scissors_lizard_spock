@@ -25,11 +25,11 @@
         var alex = new Player('Alex');
         var tony = new Player('Tony');
         var game = new Game(alex, tony)
-        
+        var possiblePicks = ['rock', 'paper', 'scissors', 'lizard', 'spock']
 
         $('.choices img').on('click', function(){
           alex.picks($(this).data('pick'));
-          tony.picks('rock');
+          tony.picks(_GenerateRandomPickFrom(possible_picks));
 
           $('#results').prepend('<li>' + game.winningMessage() + '</li>');
           $('#results li:gt(5)').remove()
