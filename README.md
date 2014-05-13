@@ -1,9 +1,12 @@
-Rock-Paper-Scissors-Lizard-Spock
+Rock-Paper-Scissors-Lizard-Spock!
 ===
-an epic, more complex version of Rock Paper Scissors, as seen on the [Big Bang Theory].
+an epic, more complex version of Rock Paper Scissors
 ---
+**as seen on the [Big Bang Theory]**
 	
 I pair programmed with [Nico Saueressig] to create a simple JavaScript application where a person can play rock-paper-scissors-lizard-spock with the computer.
+
+
 
 **Tech**
 
