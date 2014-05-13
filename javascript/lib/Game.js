@@ -51,5 +51,5 @@ Game.prototype._isSamePick = function() {
 }
 
 Game.prototype._generateRandomPickFrom = function(array) {
-  return array[Math.floor(Math.random() * array.length)]
+  return array[Math.floor(Math.random() * array.length)];
 }
