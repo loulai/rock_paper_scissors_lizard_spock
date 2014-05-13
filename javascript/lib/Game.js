@@ -2,7 +2,7 @@ function Game(player1, player2) {
   this.player1 = player1;
   this.player2 = player2;
 }
-//hello
+
 Game.prototype.PAIRS = {
   rock:     { scissors: 'crushes', lizard: 'squashes' },
   paper:    { rock: 'covers', spock: 'disproves' },
@@ -29,12 +29,14 @@ Game.prototype.loser = function() {
 Game.prototype.winningMessage = function() {
   var message;
 
-  if(this.winner()) {
+  if(this._isSamePick()) {
+    message = 'Draw';
+  } 
+  else {
     message = [this.winner().name,
     this._victoryVerbFor(this.winner().pick, this.loser().pick),
     this.loser().name].join(' ');
-  } else {
-    message = 'Draw';
+    
   }
 
   return message;
