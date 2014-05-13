@@ -14,6 +14,7 @@
       <img src="images/spock.png" data-pick='spock'>
     </div>
     <ul id="results">
+      <li> <li>Tony crushessag</li> </li>
     </ul>
 
     <script src='lib/Player.js'></script>
@@ -29,7 +30,7 @@
           alex.picks($(this).data('pick'));
           tony.picks('rock');
 
-          $('#results li').append('<li>' + game.winningMessage() + '</li>');
+          $('#results li').prepend('<li>' + game.winningMessage() + '</li>');
         })
       })
     </script>
