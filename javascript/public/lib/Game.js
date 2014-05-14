@@ -1,6 +1,6 @@
-function Game(player1, player2) {
-  this.player1 = player1;
-  this.player2 = player2;
+function Game(niddy, bobby) {
+  this.player1 = niddy;
+  this.player2 = bobby;
 }
 
 Game.prototype.PAIRS = {
@@ -21,7 +21,7 @@ Game.prototype.winner = function() {
     return this.player2;
   }
 }
-
+.
 Game.prototype.loser = function() {
   return (this.winner() === this.player1 ? this.player2 : this.player1);
 }
@@ -51,6 +51,7 @@ Game.prototype._isSamePick = function() {
 }
 
 Game.prototype.generateRandomPickFrom = function() {
-  var array = Object.keys(this.PAIRS)
-  return array[Math.floor(Math.random() * array.length)];
+  var array_of_keys = Object.keys(this.PAIRS);
+
+  return array_of_keys[Math.floor(Math.random() * array.length)];
 }

@@ -13,6 +13,7 @@
       <img src="images/lizard.png" data-pick='lizard'>
       <img src="images/spock.png" data-pick='spock'>
     </div>
+
     <ul id="results">
     
     </ul>
@@ -24,14 +25,14 @@
       $(document).ready(function(){
         var alex = new Player('Alex');
         var tony = new Player('Tony');
-        var game = new Game(alex, tony)
+        var myGame = new Game(alex, tony)
         var possiblePicks = ['rock', 'paper', 'scissors', 'lizard', 'spock']
 
         $('.choices img').on('click', function(){
-          alex.picks($(this).data('pick'));
-          tony.picks(game.generateRandomPickFrom());
+          alex.picks('$(this).data('pick')');
+          tony.picks(myGame.generateRandomPickFrom());
 
-          $('#results').prepend('<li>' + game.winningMessage() + '</li>');
+          $('#results').prepend('<li>' + mygame.winningMessage() + '</li>');
           //  $('#results li:gt(5)').remove();
           $('#results li:nth-child(6)').fadeOut(1000, function(){
             $(this).remove();
